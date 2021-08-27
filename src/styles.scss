@@ -1,0 +1,36 @@
+* { padding: 0; margin: 0; box-sizing: border-box; font-family: 'Nunito', sans-serif;; }
+
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
+
+.active { box-shadow: inset -5px 0px 0 0 #7d60f5; background: #d0d0d0; }
+
+.app {
+  &.layout {
+    display: flex; flex-flow: row nowrap; height: 100vh;
+    aside {
+      background: white; background-color: #f8f8f8; flex: 1 1 auto;
+      max-width: 300px; min-width: 120px;
+      header { padding: 20px 15px; margin-bottom: 15px; }
+      nav {
+        ul li {
+          transition: all .3s ease;
+          a { padding: 10px 15px; display: block; }
+          &:hover { @extend .active; }
+        }
+      }
+    }
+    main {
+      flex: 1 1 auto; padding: 0 30px;
+      .page-title h1 { padding: 60px 0 30px 0; }
+    }
+    .centered { max-width: 600px; }
+  }
+}
+
+.logo{
+  background-image: url('https://res.cloudinary.com/hbrrdozyj/image/upload/v1558546804/cliengo819x195_zxegqs.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 39px;
+}

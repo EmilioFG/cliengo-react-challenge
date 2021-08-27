@@ -1,0 +1,17 @@
+
+
+.button { border: none; background: #7d60f5;
+  border-radius: 8px; padding: 8px 16px; min-width: 100px; font-weight: bold; color: #FFFFFF; }
+
+.label {
+  font-style: normal; font-weight: normal; font-size: 14px; line-height: 18px; 
+  display: flex; align-items: center; color: #62595D; margin-bottom: 8px;
+}
+input {
+  &[type="text"] { border: 1px solid #BFBBBD;
+    box-sizing: border-box; padding: 8px;
+    border-radius: 8px; width: 100%;}
+    margin-bottom: 30px; font-size: 16px; line-height: 24px;
+}
+
+h2 { margin: 0; margin-bottom: 30px; }
